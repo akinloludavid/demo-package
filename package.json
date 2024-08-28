@@ -1,0 +1,33 @@
+{
+  "name": "@ak/demo",
+  "version": "1.0.0",
+  "description": "a set of utility functions created by ak",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/akinloludavid/demo-package.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "utils",
+    "react"
+  ],
+  "author": "ak money",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akinloludavid/demo-package/issues"
+  },
+  "homepage": "https://github.com/akinloludavid/demo-package#readme",
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
