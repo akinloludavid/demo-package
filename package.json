@@ -11,7 +11,9 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-    "lint": "tsc"
+    "local-release": "changeset version && changeset publish",
+    "lint": "tsc",
+    "prepublishOnly": "npm run ci"
   },
   "exports": {
     "./package.json": "./package.json",
@@ -39,6 +41,7 @@
   "type": "module",
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.4",
+    "@changesets/cli": "^2.27.7",
     "prettier": "^3.3.3",
     "tsup": "^8.2.4",
     "typescript": "^5.5.4",
